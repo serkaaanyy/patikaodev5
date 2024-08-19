@@ -1,0 +1,43 @@
+1. Bölme aşamaları:
+-----------------------
+Dizi ikiye bölünür:
+[16, 21, 11] ve [8, 12, 22]
+
+İlk yarı tekrar bölünür:
+[16] ve [21, 11]
+
+[21, 11] tekrar bölünür:
+[21] ve [11]
+
+İkinci yarı bölünür:
+[8] ve [12, 22]
+
+[12, 22] tekrar bölünür:
+[12] ve [22]
+
+
+2. Birleştirme aşamaları:
+--------------------------
+[21] ve [11] birleştirilir:
+[11, 21]
+
+[16] ile [11, 21] birleştirilir:
+[11, 16, 21]
+
+[12] ve [22] birleştirilir:
+[12, 22]
+
+[8] ile [12, 22] birleştirilir:
+[8, 12, 22]
+
+Son olarak, [11, 16, 21] ile [8, 12, 22] birleştirilir:
+Sonuç: [8, 11, 12, 16, 21, 22]
+
+
+Big-O Gösterimi:
+-----------------------
+Merge Sort, her zaman O(nlogn) karmaşıklığına sahiptir.
+Bölme işlemiO(logn) seviyesinde olur çünkü her adımda dizi ikiye bölünür.
+Birleştirme işlemi ise her seviye için O(n) zaman alır.
+
+Merge Sort'un en kötü, en iyi ve ortalama durumlardaki karmaşıklığı aynıdır: O(nlogn).
